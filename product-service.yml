@@ -2,7 +2,7 @@ server:
   port: 9010
 spring:
   application:
-      name: service-product
+    name: service-product
   h2:
     console:
       enabled: true
@@ -21,3 +21,7 @@ spring:
 logging:
   pattern:
     console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTER:-%5p}} %m%n"
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9000/eureka/
