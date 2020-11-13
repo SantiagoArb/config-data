@@ -23,10 +23,9 @@ eureka:
       defaultZone: http://localhost:9000/eureka/
 feign:
   hystrix:
-    enabled: false
+    enabled: true
 management:
   endpoints:
     web:
       exposure:
         include: "*"
-
