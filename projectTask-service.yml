@@ -1,13 +1,13 @@
 server:
-  port: 9010
+  port: 9011
 spring:
   application:
-    name: service-product
+    name: service-projectTask
   h2:
     console:
       enabled: true
   datasource:
-    url: jdbc:h2:mem:productBD;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    url: jdbc:h2:mem:customerBD;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
     driver-class-name: org.h2.Driver
     platform: h2
     username: sa
@@ -17,10 +17,6 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.H2Dialect
-
-logging:
-  pattern:
-    console: "%d{yyyy-MM-dd HH:mm:ss} ${LOG_LEVEL_PATTER:-%5p}} %m%n"
 eureka:
   client:
     serviceUrl:
